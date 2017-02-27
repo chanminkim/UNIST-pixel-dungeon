@@ -37,7 +37,10 @@ import com.watabou.noosa.ui.Component;
 public class ChangesScene extends PixelScene {
 
 	private static final String TXT_Update =
-			"_v0.1.0a:_\n"
+			"_v0.1.0b:_\n"
+					+ "_-_ 글자 안나오는 점 수정\n"
+					+ "\n"
+			+ "_v0.1.0a:_\n"
 					+ "_-_ UNIST 유일 컴퓨터 연구개발 동아리 _HeXA_ 에서 Shattered Pixel Dungeon 소스 코드를 기반으로 유니스트 스타일로 재구성한 _UNIST Pixel Dungeon_ 입니다.\n"
 					+ "\n"
 					+ "_-_ 버그가 있다거나 더 좋은 아이디어가 있으시다면 언제든지 _jjkyc@naver.com_ 으로 메일 주세요!";

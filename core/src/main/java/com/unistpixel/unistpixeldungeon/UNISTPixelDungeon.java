@@ -481,7 +481,7 @@ public class UNISTPixelDungeon extends Game {
 			if (lang.status() == Languages.Status.REVIEWED)
 				return lang;
 			else
-				return Languages.ENGLISH;
+				return Languages.KOREAN;
 		}
 		else return Languages.matchCode(code);
 	}
