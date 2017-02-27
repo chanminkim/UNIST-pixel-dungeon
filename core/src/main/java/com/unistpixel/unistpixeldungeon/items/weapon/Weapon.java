@@ -217,8 +217,8 @@ abstract public class Weapon extends KindOfWeapon {
 		float roll = Random.Float();
 		if (roll < 0.3f){
 			//30% chance to be level 0 and cursed
-			enchant(Enchantment.randomCurse());
 			cursed = true;
+			enchant(Enchantment.randomCurse());
 			return this;
 		} else if (roll < 0.75f){
 			//45% chance to be level 0
@@ -238,14 +238,11 @@ abstract public class Weapon extends KindOfWeapon {
 	}
 	
 	public Weapon enchant( Enchantment ench ) {
-		// Enchant 라면 적용 안하고
-		for( int i=0; i < Enchantment.enchants.length; i++ )
-		{
-			if( ench.equals(Enchantment.enchants[i]) )
-				return this;
-		}
-		// Curse 라면 적용 한다.
-		enchantment = ench;
+
+		// 저주만 적용되게 함
+		if( cursed == true )
+			this.enchantment = ench;
+
 		return this;
 	}
 
